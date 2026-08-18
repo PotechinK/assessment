@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ビビデダビデQuiz</title>
+  <link rel="stylesheet" href="davidavi-quiz.css">
+</head>
+
+<body>
+
+  <!-- 1. タイトル画面 -->
+
+  <section id="title-screen" class="screen">
+
+    <img
+      src="images/1.jpg"
+      class="background"
+      alt="タイトル画面"
+    >
+
+    <!-- タイトル文字 -->
+    <div id="title">
+      <span id="main-title"></span>
+      <span id="quiz-title">
+        <span id="q-title"></span><span id="uiz-title"></span>
+      </span>
+    </div>
+
+    <!-- 背景画像に描かれている「スタート」の上に置く透明ボタン -->
+    <button
+      id="start-button"
+      class="transparent-button"
+      aria-label="START">
+    </button>
+
+  </section>
+
+  <!-- 2. 問題画面 -->
+
+  <section
+    id="quiz-screen"
+    class="screen hidden">
+
+    <img
+      src="images/2.jpg"
+      class="background"
+      alt="問題画面"
+    >
+
+    <!-- 問題番号 -->
+    <div id="question-number"></div>
+
+    <div id="question-area">
+
+      <!-- 問題 -->
+      <div id="question"></div>
+
+      <!-- 2択 -->
+      <div id="answer-area">
+       
+        <button
+          id="answer-a"
+          class="answer-button">
+        </button>
+
+        <button
+          id="answer-b"
+          class="answer-button">
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 結果を見る画面 -->
+
+  <section
+    id="result-check-screen"
+    class="screen hidden">
+
+    <img
+      src="images/3.jpg"
+      class="background"
+      alt="結果を見る"
+    >
+
+    <!-- 背景画像の「結果を見る」の上に置く透明ボタン -->
+
+    <button
+      id="result-button"
+      class="transparent-button"
+      aria-label="結果を見る">
+    </button>
+
+  </section>
+
+  <!-- 4. 結果画面 -->
+
+  <section
+    id="result-screen"
+    class="screen hidden">
+
+    <!-- 40.jpg～45.jpgを結果に応じて表示する -->
+
+    <img
+      id="result-image"
+      class="background"
+      src=""
+      alt="結果"
+    >
+
+    <!--
+      結果画像に描かれている「ここをクリック」の上に置く透明ボタン
+    -->
+
+    <button
+      id="result-next-button"
+      class="transparent-button"
+      aria-label="次へ">
+    </button>
+
+  </section>
+
+  <!-- 5. もう一度 / 終了 -->
+
+  <section
+    id="again-screen"
+    class="screen hidden">
+
+    <img
+      src="images/5.jpg"
+      class="background"
+      alt="もう一度または終了"
+    >
+
+    <!-- 「もう一度」の透明クリック領域 -->
+
+    <button
+      id="again-button"
+      class="transparent-button"
+      aria-label="もう一度">
+    </button>
+
+    <!-- 「終了」の透明クリック領域 -->
+
+    <button
+      id="end-button"
+      class="transparent-button"
+      aria-label="終了">
+    </button>
+
+  </section>
+
+  <!-- 6. また来てね画面 -->
+
+  <section
+    id="end-screen"
+    class="screen hidden">
+
+    <img
+      src="images/6.jpg"
+      class="background"
+      alt="また来てね"
+    >
+  </section>
+
+  <!-- JavaScript -->
+  <script src="davidavi-quiz.js"></script>
+
+</body>
+</html>
